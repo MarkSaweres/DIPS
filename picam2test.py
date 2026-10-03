@@ -47,17 +47,17 @@ def onTrack5(val):
 def onTrack6(val):
     global valHigh
     valHigh=val
-    print('Hue Low',valHigh)
+    print('Val High',valHigh)
 
 
 cv2.namedWindow('myTracker')
 
-cv2.createTrackbar('Hue Low','myTracker',0,179,onTrack1)
-cv2.createTrackbar('Hue High','myTracker',30,179,onTrack2)
-cv2.createTrackbar('Sat Low','myTracker',105,255,onTrack3)
-cv2.createTrackbar('Sat High','myTracker',255,255,onTrack4)
-cv2.createTrackbar('Val Low','myTracker',140,255,onTrack5)
-cv2.createTrackbar('Val High','myTracker',255,255,onTrack6)
+cv2.createTrackbar('Hue Low','myTracker',hueLow,179,onTrack1)
+cv2.createTrackbar('Hue High','myTracker',hueHigh,179,onTrack2)
+cv2.createTrackbar('Sat Low','myTracker',satLow,255,onTrack3)
+cv2.createTrackbar('Sat High','myTracker',satHigh,255,onTrack4)
+cv2.createTrackbar('Val Low','myTracker',valLow,255,onTrack5)
+cv2.createTrackbar('Val High','myTracker',valHigh,255,onTrack6)
 
 while True:
     tStart=time.time()
@@ -72,7 +72,7 @@ while True:
     myObjectSmall=cv2.resize(myObject,(int(dispW/2),int(dispH/2)))
     cv2.imshow("Camera", frame)
     cv2.imshow('my Mask',myMaskSmall)
-    cv2.imshow('My Objest',myObjectSmall)
+    cv2.imshow('My Object',myObjectSmall)
     if cv2.waitKey(1)==ord('q'):
         break
     tEnd=time.time()
