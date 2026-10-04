@@ -1,6 +1,6 @@
 # DIPS: Detection of Incoming Projectile System
 
-A Raspberry Pi camera prototype that picks a colored object out of a live video feed in real time. It is the early vision prototype for D.I.P.S., our CMPE 195 senior project team at San Jose State University. The finished system adds two servos that aim the camera at the largest matching object; that version is in the team repo, [CMPE195-Group26/D.I.P.S.](https://github.com/CMPE195-Group26/D.I.P.S.).
+A Raspberry Pi camera prototype that picks a colored object out of a live video feed in real time. It is the early vision prototype for D.I.P.S., our team's CMPE 195 senior project at San Jose State University. The finished system adds two servos that aim the camera at the largest matching object; that version is in the team repo, [CMPE195-Group26/D.I.P.S.](https://github.com/CMPE195-Group26/D.I.P.S.).
 
 [ObjectBinaryMappingDemo.mp4](ObjectBinaryMappingDemo.mp4) shows it running.
 
